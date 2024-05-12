@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Blog preview card</title>
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    body{
+      font-family: "Figtree";
+      font-size: 16px;
+      background-color: hsl(47, 88%, 63%);
+    }
+    .card{
+      width: 280px;
+      height: 50%;
+      padding: 1em;
+      background-color:hsl(0, 0%, 100%);
+      border: 1.5px solid black;
+      border-radius: 1em;
+      box-shadow: 7px 7px 1px black;
+    }
+    .st-half{
+      width: 275px;
+      height: 30%;
+      margin-left: 0.1em;
+      
+    }
+    .st-half>img{
+      max-width: 100%;
+      border: 1px solid white;
+      border-radius: 1em;
+    }
+    .nd-half{
+      width: 100%;
+      height: 40%;
+      margin-left: 0.1em;
+    }
+    .btu{
+      width: 5.8em;
+      height: 1.8em;
+      background-color:  hsl(47, 88%, 63%);
+      border-radius: 0.2em;
+    }
+    .btu-h{
+      margin-left: 0.9em;
+      font-weight: 800;
+      padding-top: 0.25em;
+    }
+    .ptu{
+      font-size: 0.9em;
+      font-weight: 500;
+      width: 100%;
+    }
+    .atu{
+      width: 100%;
+    }
+    .atu>h1{
+      font-size: 1.2em;
+      font-weight: 800;
+    }
+    h1:hover{
+      color: hsl(47, 88%, 63%);
+    }
+    .atu>p{
+      color: hsl(0, 0%, 50%);
+      font-family: inherit;
+      font-size: 0.85em;
+      font-weight: 500;
+      line-height: 1.5em;
+    }
+    .itu-i{
+      width: 30px;
+      height: 30px;
+      float: left;
+      margin-right: 0.7em;
+
+    }
+    .itu-i>img{
+      max-width: 100%;
+    }
+    .itu>h5{
+      padding-top: 0.6em;
+    }
+    @media(min-width:300px){
+      .card{
+        margin-left: 3%;
+        margin-top: 20%;
+      }
+    }
+    @media (min-width:600px){
+      .card{
+        margin-left: 30%;
+        margin-top: 10%;
+      }
+    }
+    @media (min-width:1000px){
+      .card{
+        margin-left: 40%;
+        margin-top: 6%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="st-half">
+      <img src="assets/images/illustration-article.svg" alt="">
+    </div>
+    <div class="nd-half">
+      <div class="btu">
+        <h4 class="btu-h">Learning</h4>
+      </div>
+      <div class="ptu">
+        <p>Published 21 Dec 2023</p>
+      </div> 
+      <div class="atu">
+        <h1>HTML & CSS foundations</h1>
+        <p>These languages are the backbone of every<br>website, defining structure, content, and<br>presentation.</p>
+      </div> 
+      <div class="itu">
+        <div class="itu-i">
+          <img src="assets/images/image-avatar.webp" alt="">
+        </div>
+          <h5>Greg Hooper</h5>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
